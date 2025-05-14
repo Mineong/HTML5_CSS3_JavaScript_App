@@ -96,13 +96,12 @@
         event.preventDefault();
         console.log("Form 제출 되었음...");
 
-        //FormData 객체생성 <form>엘리먼트를 객체로 변환
+        //FormData 객체생성
         const stuFormData = new FormData(studentForm);
         stuFormData.forEach((value, key) => {
           console.log(key + ' = ' +  value);
         });
 
-        //사용자 정의 Student 객체생성
         const studentData = {
           name: stuFormData.get("name").trim(),
           studentNumber: stuFormData.get("studentNumber").trim(),
