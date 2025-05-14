@@ -19,9 +19,14 @@
 * 수정 모드와 등록 모드 전환
 * 입력 필드별 실시간 유효성 검사(js)
 
-### 각 step 별 기능:
-* stpe01 - html page 작성
-* step02 - form 내부의 input과 table에 css 추가
-* step3 
-    - form.css 파일로 분리하기 
+### 각 Step 별 기능:
+step1 - html page 작성
+step2 - form 내부의 input 과 table 에 CSS 추가
+step3 
+    - form.css 파일로 분리하기
     - form 내부의 input에 form-group, form-grid css 추가
+    - form.css 에 form-group, form-grid 클래스 추가하기
+step4
+    - javascript 코드 작성하기 시작
+    - Form Load Event 핸들링 하기
+    - Form Submit Event 핸들링 하기    
