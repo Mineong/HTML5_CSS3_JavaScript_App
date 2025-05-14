@@ -55,7 +55,7 @@
 
   <div>
     <h2>학생 목록</h2>
-    <table>
+    <table id="studentTable">
       <thead>
         <tr>
           <th>이름</th>
@@ -67,13 +67,33 @@
           <th>액션</th>
         </tr>
       </thead>
-      <tbody></tbody>
+      <tbody id="studentTableBody"></tbody>
     </table>
   </div>
   <script>
     //전역변수
     const API_BASE_URL = "http://localhost:8080";
-    
+
+    //DOM 요소
+    const studentForm = document.getElementById("studentForm");
+    const studentTableBody = document.getElementById("studentTableBody");
+
+    //Form Load 이벤트 처리
+    document.addEventListener("DOMContentLoaded", function () {
+      loadStudents();
+    });
+
+    //Form Submit 이벤트 처리
+    studentForm.getElementById("submit", function (event) {
+      event.preventDefault(); // 기본 제출 동작 방지
+      console.log("Form 제출되었음");
+
+    });
+
+    //학생목록 로드하는 함수
+    function loadStudents() {
+      console.log("학생 목록 로드 중...");
+    }
 
   </script>
 </body>
